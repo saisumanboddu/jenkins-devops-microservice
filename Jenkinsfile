@@ -10,7 +10,7 @@ pipeline {
 	stages {
 		stage('checkout') {
 			steps {
-				sh 'mnv --version'
+				sh 'mvn --version'
 				sh 'docker version'
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
 				echo "BUILD_ID - $env.BUILD_ID"
